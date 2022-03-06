@@ -1,0 +1,17 @@
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title><h1>{{reservation.restaurantName}}</h1></mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-divider></mat-divider>
+            <p>Address: {{reservation.restaurantAddress}}</p>
+            <p>Phone: {{reservation.restaurantPhone}}</p>
+            <p>Reservation on: {{reservation.reservationTime}}</p>
+            <p>Party Size: {{reservation.partySize}}</p>
+            <p>Reservation made by: {{reservation.customer}}</p>
+            <p>Reservation Status: {{reservation.reservationStatus}}</p>
+
+            <button mat-button (click)="openUpdate()">Update</button>
+            <button mat-button (click)="confirmCancel()">Cancel</button>
+            <button mat-button (click)="confirmApprove()">Approve</button>
+            <button mat-button (click)="confirmDeny()">Deny</button>
+        </mat-expansion-panel>
