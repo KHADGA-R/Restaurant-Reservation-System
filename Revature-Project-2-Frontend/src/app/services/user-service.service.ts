@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 })
 export class UserServiceService {
 private url = "http://localhost:7000/users";
-//private url = "http://34.150.205.253:7000"
+
 
   
   login(email:string, password:string):Observable<IUser>{
